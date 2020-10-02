@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemThi = [4,6,7,9,2];
+    function findMax(arr) {
+        let max = diemThi[0];
+        for(let i = 0; i<diemThi.length; i++){
+            if(diemThi[i] >= max){
+                max = diemThi[i];
+            }
+        }
+        document.write("Điểm thi cao nhất là: " + max);
+    }
+    findMax(diemThi);
+</script>
+</body>
+</html>

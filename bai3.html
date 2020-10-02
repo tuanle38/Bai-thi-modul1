@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(number) {
+        let fibo = [];
+        fibo[0] = 0;
+        fibo[1] = 1;
+        for(let i = 2; i < 1000; i++ ) {
+            fibo[i] = fibo[i-1] + fibo[i-2];
+        }
+        if(fibo.indexOf(number) !== -1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+// console.log(isFibonacci(3));
+</script>
+</body>
+</html>
